@@ -16,6 +16,12 @@
 		DB55C6FE2BC6AB9400A7A17C /* life_timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55C6FD2BC6AB9400A7A17C /* life_timerTests.swift */; };
 		DB55C7082BC6AB9400A7A17C /* life_timerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55C7072BC6AB9400A7A17C /* life_timerUITests.swift */; };
 		DB55C70A2BC6AB9400A7A17C /* life_timerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55C7092BC6AB9400A7A17C /* life_timerUITestsLaunchTests.swift */; };
+		DB55C71A2BC7F99E00A7A17C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55C7192BC7F99E00A7A17C /* SettingViewController.swift */; };
+		DB55C71D2BC7F9F000A7A17C /* FormStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55C71C2BC7F9F000A7A17C /* FormStartViewController.swift */; };
+		DB55C71F2BC7FA3F00A7A17C /* FormDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55C71E2BC7FA3F00A7A17C /* FormDoViewController.swift */; };
+		DB55C7222BC7FBFA00A7A17C /* DigitTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55C7212BC7FBFA00A7A17C /* DigitTimerView.swift */; };
+		DB55C7242BC7FC0F00A7A17C /* AnalogTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55C7232BC7FC0F00A7A17C /* AnalogTimerView.swift */; };
+		DB55C7262BC7FC4500A7A17C /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55C7252BC7FC4500A7A17C /* QuestionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		DB55C7032BC6AB9400A7A17C /* life_timerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = life_timerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB55C7072BC6AB9400A7A17C /* life_timerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = life_timerUITests.swift; sourceTree = "<group>"; };
 		DB55C7092BC6AB9400A7A17C /* life_timerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = life_timerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB55C7192BC7F99E00A7A17C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		DB55C71C2BC7F9F000A7A17C /* FormStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormStartViewController.swift; sourceTree = "<group>"; };
+		DB55C71E2BC7FA3F00A7A17C /* FormDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDoViewController.swift; sourceTree = "<group>"; };
+		DB55C7212BC7FBFA00A7A17C /* DigitTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitTimerView.swift; sourceTree = "<group>"; };
+		DB55C7232BC7FC0F00A7A17C /* AnalogTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogTimerView.swift; sourceTree = "<group>"; };
+		DB55C7252BC7FC4500A7A17C /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +144,7 @@
 		DB55C7162BC6AB9F00A7A17C /* views */ = {
 			isa = PBXGroup;
 			children = (
+				DB55C7202BC7FBDE00A7A17C /* timerViews */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -139,7 +152,9 @@
 		DB55C7172BC6ABB600A7A17C /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DB55C71B2BC7F9B300A7A17C /* formViewControllers */,
 				DB55C6EA2BC6AB9200A7A17C /* ViewController.swift */,
+				DB55C7192BC7F99E00A7A17C /* SettingViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -147,8 +162,27 @@
 		DB55C7182BC6ABC300A7A17C /* models */ = {
 			isa = PBXGroup;
 			children = (
+				DB55C7252BC7FC4500A7A17C /* QuestionModel.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		DB55C71B2BC7F9B300A7A17C /* formViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB55C71C2BC7F9F000A7A17C /* FormStartViewController.swift */,
+				DB55C71E2BC7FA3F00A7A17C /* FormDoViewController.swift */,
+			);
+			path = formViewControllers;
+			sourceTree = "<group>";
+		};
+		DB55C7202BC7FBDE00A7A17C /* timerViews */ = {
+			isa = PBXGroup;
+			children = (
+				DB55C7212BC7FBFA00A7A17C /* DigitTimerView.swift */,
+				DB55C7232BC7FC0F00A7A17C /* AnalogTimerView.swift */,
+			);
+			path = timerViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB55C7222BC7FBFA00A7A17C /* DigitTimerView.swift in Sources */,
+				DB55C71D2BC7F9F000A7A17C /* FormStartViewController.swift in Sources */,
 				DB55C6EB2BC6AB9200A7A17C /* ViewController.swift in Sources */,
 				DB55C6E72BC6AB9200A7A17C /* AppDelegate.swift in Sources */,
+				DB55C71F2BC7FA3F00A7A17C /* FormDoViewController.swift in Sources */,
 				DB55C6E92BC6AB9200A7A17C /* SceneDelegate.swift in Sources */,
+				DB55C7262BC7FC4500A7A17C /* QuestionModel.swift in Sources */,
+				DB55C7242BC7FC0F00A7A17C /* AnalogTimerView.swift in Sources */,
+				DB55C71A2BC7F99E00A7A17C /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
